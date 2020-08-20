@@ -30,11 +30,11 @@ class Artist
     end
   end
 
-  def self.find(name)     #class method detects instances from @@all class variable
+  def self.find(name)     
     self.all.detect { |artist| artist.name == name }
   end
 
-  def self.create(name)   #class method creates & stores instances vs initializing
+  def self.create(name)   
     artist = Artist.new(name)
     artist.save
     artist
