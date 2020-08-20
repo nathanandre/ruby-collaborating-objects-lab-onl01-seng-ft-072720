@@ -8,6 +8,9 @@ class Artist
     save
   end
   
+  def save 
+  end
+  
   def self.all      
     @@all
   end
